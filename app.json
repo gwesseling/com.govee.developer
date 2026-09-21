@@ -2900,6 +2900,46 @@
       ]
     },
     {
+      "id": "govee-ble-light",
+      "name": {
+        "en": "[Beta] BLE Light Strip"
+      },
+      "class": "light",
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "ble"
+      ],
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation"
+      ],
+      "images": {
+        "small": "/drivers/govee-ble-light/assets/images/small.png",
+        "large": "/drivers/govee-ble-light/assets/images/large.png",
+        "xlarge": "/drivers/govee-ble-light/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "options": {
+            "singular": false
+          },
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ]
+    },
+    {
       "id": "govee-ble-sensor",
       "name": {
         "en": "[Beta] BLE Temp Sensor"
